@@ -1,0 +1,4 @@
+name: <%= appname %>
+
+exclude: ['<%= imgDir %>', '<%= cssDir %>', '<%= jsDir %>', '<%= fontDir %>',
+          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']

@@ -1,0 +1,18 @@
+{
+  "name": "<%= _.slugify(appname) %>",
+  "version": "0.0.0",
+  "dependencies": {<%
+    var deps = [];
+    if (includeReset) {
+      deps.push('\n    "reset-css": "~2.0.20110126"');
+    }
+    if (includeNeat) {
+      deps.push('\n    "neat": "~1.7.0"');
+    }
+    if (includeFontAwesome) {
+      deps.push('\n    "fontawesome": "~4.2.0"');
+    }
+    print(deps.join(','));
+    %>
+  }
+}
